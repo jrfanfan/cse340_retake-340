@@ -4,3 +4,50 @@
 *:after {
   box-sizing: border-box;
 }
+
+#top-header {
+  overflow: hidden;
+  padding: 20px 10px;
+  text-decoration: none;
+  line-height: 25px;
+ }
+
+.siteName {
+  float: left;
+  font-size: 42px; 
+  
+}
+
+.siteName a {
+  text-decoration: none;
+  color: black;
+}
+
+#tools {
+  float: right;
+  font-size: 36px; 
+  
+}
+
+#tools a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  margin-top: 45px;
+  overflow: hidden;
+  background-color: black;
+  height: 75px;
+  word-spacing: 200px;
+  padding-left: 200px;
+}
+
+nav li {
+  color: white;
+  font-size: 24px;
+  display: inline;
+  outline: 12px;
+  float: inline;
+  
+}
