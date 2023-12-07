@@ -106,9 +106,54 @@ h2 {
 #imgDelorean {
   margin-left: 180px;
   padding-top: 20px;
-  width: 10;
+  width: 10px;
 }
 
+.upgrade h2 {
+  font-size: 35px;
+  
+}
+
+.division {
+  display:grid;
+  font-size: 28px;
+  
+}
+
+#upgrade, #upgrade2 {
+  display: inline-block;
+ 
+}
+div.gallery {
+  margin: 5px;
+  background-color: rgba(0, 201, 252, 0.877);
+  float: left;
+  width: 200px;
+  height: 76px;
+  border: 1px solid #a1a1a1;
+  
+}
+
+#upgrade img, #upgrade2 img {
+  padding-left: 60px;
+  padding-top: 5px;
+  width: 150px;
+  height: 70px;
+}
+
+
+div.desc {
+  text-align: center;
+  
+  
+}
+
+#review {
+  padding: 1px 445px;
+  position: absolute;
+}
+
+
 footer {
-  padding-top: 100%;
+  padding-top: 2%;
 }
