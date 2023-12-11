@@ -7,8 +7,8 @@
             "previewLimit": 50,
             "server": "localhost",
             "driver": "PostgreSQL",
-            "name": "cse340retake340Render.com",
-            "connectString": "postgres://cse340retake340:8SYyTdXuOmue3yD1ER6SYhZLck90zjLw@dpg-clpjp6p46foc73ab0nl0-a.ohio-postgres.render.com/cse340retake340"
+            "name": "cse340-Retake-340",
+            "connectString": "postgres://retakecse340:ZljqDBFo6EaXpX9OeeHgasF1QaZRowvW@dpg-clrlm7146foc739fev90-a.ohio-postgres.render.com/retakecse340"
         }
     ]
 }
