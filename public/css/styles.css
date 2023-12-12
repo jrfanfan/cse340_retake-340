@@ -39,32 +39,19 @@
 }
 
 nav {
-  margin-top: 75px;
-  overflow: hidden;
-  background-color: black;
-  height: 55px;
-  word-spacing: 12dvw;
-  overflow: hidden;
-  text-align: center;
-  
-  
-  
+     
 }
-
-nav li {
-  
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 32px;
+nav  li {
   display: inline;
- 
- 
+  
+  
 }
 
 nav li:hover {
 
   background-color: #ddd;
   color: black;
+  t
   
 }
 
