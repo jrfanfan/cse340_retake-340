@@ -39,19 +39,30 @@
 }
 
 nav {
-     
+  background-color: black;
+  overflow: hidden;
+  text-align: center; 
+  margin-top: 20px;
 }
-nav  li {
+
+nav ul li {
   display: inline;
-  
-  
+  height: 50px;
+  font-size: 32px;
+  padding-left: 7%; 
 }
 
-nav li:hover {
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding-left: 1px;
 
-  background-color: #ddd;
+ }
+
+nav a:hover {
+
+  background-color:white;
   color: black;
-  t
   
 }
 
