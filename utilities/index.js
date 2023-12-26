@@ -66,26 +66,17 @@ Util.buildClassificationGrid = async function(data){
 Util.buildClassificationGrid2 = async function(data){
   let grid2
   if(data.length > 0){
-    grid2 = '<ul>'
     data.forEach(vehicle => { 
-      grid2 += '<li>'
-      grid2 +=  '<img src="' + vehicle.inv_image
-      +'" alt="Image of on CSE Motors" />'
-      grid2 += '<div class="namePrice">'
+      grid2 = `<div id="inv_detail">`
+      grid2 += `<p>This vehicle has passed inspection <br> by an ASE-cetified technician.</p> `
+      grid2 += `</div>`
+      grid2 +=`<img src="` + vehicle.inv_image +  `" ` + ` alt="Image of ` + vehicle.inv_make + ` `
+      + vehicle.inv_model + ` on CSE Motors"/>`
 
       
-      grid2 += '<hr />'
-      grid2 += '<h2>'
-      grid2 += '<a href="../../inv/detail/' + vehicle.inv_id +'" title="View ' 
-      + vehicle.inv_make + ' ' + vehicle.inv_model + ' details">' 
-      + vehicle.inv_make + ' ' + vehicle.inv_model + '</a>'
-      grid2 += '</h2>'
-      grid2 += '<span>$' 
-      + new Intl.NumberFormat('en-US').format(vehicle.inv_price) + '</span>'
-      grid2 += '</div>'
-      grid2 += '</li>'
+           
     })
-    grid2 += '</ul>'
+    
   } else { 
     grid2 += '<p class="notice">Sorry, no matching vehicles could be found.</p>'
   }
