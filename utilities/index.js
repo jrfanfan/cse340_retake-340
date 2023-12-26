@@ -66,14 +66,11 @@ Util.buildClassificationGrid = async function(data){
 Util.buildClassificationGrid2 = async function(data){
   let grid2
   if(data.length > 0){
-    grid2 = '<ul id="inv-display">'
+    grid2 = '<ul>'
     data.forEach(vehicle => { 
       grid2 += '<li>'
-      grid2 +=  '<a href="../../inv/detail/'+ vehicle.inv_id 
-      + '" title="View ' + vehicle.inv_make + ' '+ vehicle.inv_model 
-      + 'details"><img src="' + vehicle.inv_thumbnail 
-      +'" alt="Image of '+ vehicle.inv_make + ' ' + vehicle.inv_model 
-      +' on CSE Motors" /></a>'
+      grid2 +=  '<img src="' + vehicle.inv_image
+      +'" alt="Image of on CSE Motors" />'
       grid2 += '<div class="namePrice">'
 
       
