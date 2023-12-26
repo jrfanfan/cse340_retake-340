@@ -198,7 +198,14 @@ div.desc, div.desc1 {
   margin-top: 45px;
 
 }
-
+.aside {
+  background-color: rgb(185, 128, 53);
+  position:absolute;
+  width: 500px;
+  float: right;
+  margin-top: -400px;
+  margin-left: 520px;
+}
 footer {
   padding-top: 50px;
 }
