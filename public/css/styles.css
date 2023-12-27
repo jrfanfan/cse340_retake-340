@@ -189,7 +189,7 @@ div.desc, div.desc1 {
   font-size: 30px;
 }
 
-#inv_detail {
+.inv_detail {
   background-color: black;
   color: aliceblue;
   width: 500px;
@@ -198,13 +198,33 @@ div.desc, div.desc1 {
   margin-top: 45px;
 
 }
+
+ img {
+  height: 325px;
+  width: 500px;
+}
 .aside {
-  background-color: rgb(185, 128, 53);
+  
   position:absolute;
   width: 500px;
   float: right;
-  margin-top: -400px;
-  margin-left: 520px;
+  margin-top: -408px;
+  margin-left: 515px;
+  height: 403px;
+}
+
+.aside h3 {
+  font-size: 32px;
+  margin-top: -54px;
+}
+.aside #price-view p {
+  background-color: rgb(179, 198, 218);
+  height: 152px;
+  margin-top: -30px;
+  padding-top: 15px;
+  font-size: 26px;
+  font-weight: bolder;
+  padding-left: 125px;
 }
 footer {
   padding-top: 50px;

@@ -67,15 +67,20 @@ Util.buildClassificationGrid2 = async function(data){
   let grid2
   if(data.length > 0){
     data.forEach(vehicle => { 
-      grid2 = `<div id="inv_detail">`
+      grid2 = `<div class="inv_detail">`
       grid2 += `<p>This vehicle has passed inspection <br> by an ASE-cetified technician.</p> `
       grid2 += `</div>`
       grid2 +=`<img src="` + vehicle.inv_image +  `" ` + ` alt="Image of ` + vehicle.inv_make + ` `
       + vehicle.inv_model + ` on CSE Motors"/>`
       grid2 += `<hr style="width:500px; margin-left:0px; height: 25px; margin-top: -4px; background-color:green">`
       grid2 += `<div class="aside">`
-      grid2 +=  `<h2>` + vehicle.inv_model 
-      grid2 += `</h2>` 
+      grid2 +=  `<h3>` + vehicle.inv_year + ` ` + vehicle.inv_make + ` ` + vehicle.inv_model
+      grid2 += `</h3>` 
+      grid2 += `<div id="price-view">`
+      grid2 += `<p>` + `No-Haggle Price` + ` `
+      grid2 +=  `$` + vehicle.inv_price
+      grid2 += `</p>`
+      grid2 += `</div>`
       grid2 += `</div>`
       
 
