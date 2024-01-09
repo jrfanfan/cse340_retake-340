@@ -36,6 +36,15 @@ invCont.buildByClassificationDetail = async function (req, res) {
   })
 }
 
+invCont.buildByManagement = async function (req, res) {
+  const grid3 = await utilities.buildManagementGrid3()
+  let nav = await utilities.getNav()
+  res.render("./inventory/management", {
+    title: " ",
+    nav,
+    grid3,
+  })
+}
 
 
 

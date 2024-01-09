@@ -94,5 +94,18 @@ Util.buildClassificationGrid2 = async function(data){
   return grid2
 }
 
+Util.buildManagementGrid3 = async function() {
+  let grid3
+  grid3 = `<h1>`
+  grid3 += `Vehicle Management`
+  grid3 += `</h1>`
+  grid3 += `<div class = "management">`
+  grid3 += `<a href="url">Add New Classification </a> <br><br>` 
+  grid3 += `<a href="url">Add New Vehicle</a>` 
+  grid3 += `</div>`
+     
+  return grid3
+}
+
 
 module.exports = Util

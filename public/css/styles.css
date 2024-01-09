@@ -226,6 +226,12 @@ div.desc, div.desc1 {
   font-weight: bolder;
   padding-left: 125px;
 }
+
+.management a {
+  margin-left: 35px;
+  font-size: 22px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 footer {
   padding-top: 50px;
 }
