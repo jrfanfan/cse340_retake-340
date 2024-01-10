@@ -253,6 +253,23 @@ div.desc, div.desc1 {
   font-size: 22px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.addclassification {
+  background-color: rgb(19, 158, 223);
+  width: 900px;
+  margin-left: 140px;
+  padding: 12px 8px;
+  font-size: 26px;
+  border: 2px solid #81e4f1;
+}
+
+#form {
+  border: 2px solid #82ceec;
+  margin-right: 2px;
+  font-family:cursive;
+  padding-left: 15px;
+ 
+}
 footer {
   padding-top: 50px;
 }

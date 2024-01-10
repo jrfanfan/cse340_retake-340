@@ -9,4 +9,6 @@ router.get("/detail/:classificationId2", invController.buildByClassificationDeta
 
 router.get("/site-name/inv/", invController.buildByManagement);
 
+router.get("/addNewClassification", invController.buildByAddNewClassification);
+
 module.exports = router;

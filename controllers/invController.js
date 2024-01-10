@@ -46,6 +46,15 @@ invCont.buildByManagement = async function (req, res) {
   })
 }
 
+invCont.buildByAddNewClassification = async function(req, res, next) {
+  const grid4 = await utilities.buildAddClassificationGrid4()
+  let nav = await utilities.getNav()
+  res.render("./inventory/addNewClassification", {
+    title: " ",
+    nav,
+    grid4,
+  })
 
+}
 
 module.exports = invCont

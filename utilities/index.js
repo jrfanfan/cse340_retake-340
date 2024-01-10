@@ -83,9 +83,6 @@ Util.buildClassificationGrid2 = async function(data){
       + ` Miles`+ `</p>`
       grid2 += `</div>`
       grid2 += `</div>`
-      
-
-      
            
     })
     
@@ -101,12 +98,30 @@ Util.buildManagementGrid3 = async function() {
   grid3 += `Vehicle Management`
   grid3 += `</h1>`
   grid3 += `<div class = "management">`
-  grid3 += `<a href="url">Add New Classification </a> <br><br>` 
+  grid3 += `<a href="/../inv/addNewClassification">Add New Classification </a> <br><br>` 
   grid3 += `<a href="url">Add New Vehicle</a>` 
   grid3 += `</div>`
      
   return grid3
 }
 
+Util.buildAddClassificationGrid4 = async function() {
+  let grid4
+  grid4 = `<h1>`
+  grid4 += `Add New Classification`
+  grid4 += `</h1>`
+  grid4 += `<div class="addclassification">`
+  grid4 += `<h3>Field is required</h3>`
+  grid4 += `<div id="form">`
+  grid4 += `<h3>Classification Name</h3>`
+  grid4 += `<form>`
+  grid4 += `<label for="addclassification">NAME MUST BE ALPHABETIC CHARACTERS ONLY.</label> <br>`
+  grid4 += `<input type="text" id="addclassfication" name="addclassification">`
+  grid4 += `</form>`
+  grid4 += `</div>`
+  grid4 += `</div>`
+  return grid4
+
+}
 
 module.exports = Util
