@@ -277,7 +277,9 @@ div.desc, div.desc1 {
 }
 #submit {
   height: 40px;
+  font-weight: 36px;
   font-weight:bolder;
+  font-size: 16px;
 }
 footer {
   padding-top: 50px;
