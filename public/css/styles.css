@@ -261,6 +261,7 @@ div.desc, div.desc1 {
   padding: 12px 8px;
   font-size: 26px;
   border: 2px solid #81e4f1;
+  margin-top: 140px;
 }
 
 #form {
@@ -269,6 +270,14 @@ div.desc, div.desc1 {
   font-family:cursive;
   padding-left: 15px;
  
+}
+#addclassification {
+  height: 30px;
+  width: 375px;
+}
+#submit {
+  height: 40px;
+  font-weight:bolder;
 }
 footer {
   padding-top: 50px;
