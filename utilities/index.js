@@ -31,7 +31,6 @@ Util.getNav = async function (req, res, next) {
 Util.buildClassificationGrid = async function(data){
   let grid
   if(data.length > 0){
-    console.log(data)
     grid = '<ul id="inv-display">'
     data.forEach(vehicle => { 
       grid += '<li>'
@@ -127,6 +126,7 @@ Util.buildAddClassificationGrid4 = async function() {
 
 Util.builAddInvetorydGrid5 =  async function() {
   let data = await invModel.getClassifications()
+ 
   let grid5
   grid5 = `<h1>`
   grid5 += `Add New Inventory`
@@ -137,6 +137,16 @@ Util.builAddInvetorydGrid5 =  async function() {
   grid5 += `<form action="/" id="form1">`
   grid5 += `<label for="addclassification">Classification</label> <br>`
   grid5 += `<select id="classification" name="classification">`
+  grid5 +=` <option value="">--Choose a Classification--</option>`
+  grid5 += `<ul>`
+  data.rows.forEach((row) => {
+    grid5 += `<li>`
+    grid5 += `<option>` 
+    grid5 +=  row.classification_name
+    grid5 += `</option>`
+    grid5 += `</li>`
+  })
+  grid5 += `</ul>`
   grid5 += `</select> <br><br>`
   grid5 += `<input type="submit" value="Add Classification" id="submit"> <br><br>`
   grid5 += `</form>`
