@@ -11,4 +11,6 @@ router.get("/site-name/inv/", invController.buildByManagement);
 
 router.get("/addNewClassification", invController.buildByAddNewClassification);
 
+router.get("/addinventory", invController.buildByAddInventory);
+
 module.exports = router;

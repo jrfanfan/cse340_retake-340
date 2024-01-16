@@ -99,7 +99,7 @@ Util.buildManagementGrid3 = async function() {
   grid3 += `</h1>`
   grid3 += `<div class = "management">`
   grid3 += `<a href="/../inv/addNewClassification">Add New Classification </a> <br><br>` 
-  grid3 += `<a href="url">Add New Vehicle</a>` 
+  grid3 += `<a href="/../inv/addInventory">Add New Vehicle</a>` 
   grid3 += `</div>`
      
   return grid3
@@ -125,4 +125,23 @@ Util.buildAddClassificationGrid4 = async function() {
 
 }
 
+Util.builAddInvetorydGrid5 =  async function() {
+  let data = await invModel.getClassifications()
+  let grid5
+  grid5 = `<h1>`
+  grid5 += `Add New Inventory`
+  grid5 += `</h1>`
+  grid5 += `<div class="addclassification">`
+  grid5 += `<h3>ALL FIELDS ARE REQUIRED</h3>`
+  grid5 += `<div id="form">`
+  grid5 += `<form action="/" id="form1">`
+  grid5 += `<label for="addclassification">Classification</label> <br>`
+  grid5 += `<select id="classification" name="classification">`
+  grid5 += `</select> <br><br>`
+  grid5 += `<input type="submit" value="Add Classification" id="submit"> <br><br>`
+  grid5 += `</form>`
+  grid5 += `</div>`
+  grid5 += `</div>`
+  return grid5
+}
 module.exports = Util

@@ -50,9 +50,20 @@ invCont.buildByAddNewClassification = async function(req, res, next) {
   const grid4 = await utilities.buildAddClassificationGrid4()
   let nav = await utilities.getNav()
   res.render("./inventory/addNewClassification", {
-    title: " ",
+    title: "AddNewClassification",
     nav,
     grid4,
+  })
+
+}
+
+invCont.buildByAddInventory = async function(req, res) {
+  const grid5 = await utilities.builAddInvetorydGrid5()
+  let nav = await utilities.getNav()
+  res.render("./inventory/addInvetory", {
+    title: " addInvetory",
+    nav,
+    grid5,
   })
 
 }
