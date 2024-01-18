@@ -134,7 +134,7 @@ Util.builAddInvetorydGrid5 =  async function() {
   grid5 += `<div class="addclassification">`
   grid5 += `<h3>ALL FIELDS ARE REQUIRED</h3>`
   grid5 += `<div id="form">`
-  grid5 += `<form action="/" id="form1">`
+  grid5 += `<form action="" id="form2">`
   grid5 += `<label for="addclassification">Classification</label> <br>`
   grid5 += `<select id="classification" name="classification">`
   grid5 +=` <option value="">--Choose a Classification--</option>`
@@ -147,9 +147,18 @@ Util.builAddInvetorydGrid5 =  async function() {
     grid5 += `</li>`
   })
   grid5 += `</ul>`
-  grid5 += `</select> <br><br>`
+  grid5 += `</select> <br>`
+  grid5 += `<label for="invMake">Make</label><br> 
+  <input name="inv_make" id="invMake" type="text"  minlength="3" placeholder="Min of 3 characters"><br>
+  <label for="invModel">Model</label><br>
+  <input name="inv_model" id="invModel" type="text"  minlength="3" placeholder="Min of 3 characters"><br>
+  <label for="invDescription">Description</label><br>  <textarea name=" inv_description" id="description" rows="4" cols="25"></textarea><br> 
+  <label for="invImage">Image Path</label><br> <input name="inv_image" id="invImage" type="text" placeholder="/images/vehicles/no-image.png"><br>
+  <label for="invImageThumbnail">Thumbnail Path</label><br> <input name="inv_thumbnail" id="invThumnail" type="text" placeholder="/images/vehicles/no-image.png"><br>
+  <label for="invPrice">Price</label><br><input name="inv_price" id="invPrice" type="text"  placeholder="Decimal or integer"><br>
+  <label for="invYear">Year</label><br><input name="inv_year" id="invYear" type="text" minlength="4"  maxlength="4" placeholder="4-digit Year"><br>`
   grid5 += `<input type="submit" value="Add Classification" id="submit"> <br><br>`
-  grid5 += `</form>`
+  grid5 += `</form2>`
   grid5 += `</div>`
   grid5 += `</div>`
   return grid5

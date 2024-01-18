@@ -281,6 +281,16 @@ div.desc, div.desc1 {
   font-weight:bolder;
   font-size: 16px;
 }
+
+#form2 input {
+  height: 26px;
+  width: 250px;
+  font-size: 16px;
+
+}
+#form2 #description {
+  width: 360px;
+}
 footer {
   padding-top: 50px;
 }
