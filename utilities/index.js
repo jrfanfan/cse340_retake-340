@@ -114,7 +114,7 @@ Util.buildAddClassificationGrid4 = async function() {
   grid4 += `<div id="form">`
   grid4 += `<h3>Classification Name</h3>`
   grid4 += `<form action="" id="form1">
-  <label for="addclassification">NAME MUST BE ALPHABETIC CHARACTERS ONLY.</label>
+  <label for="newClassification">NAME MUST BE ALPHABETIC CHARACTERS ONLY.</label>
   <input type="text" id="newClassification" name="newClassification" pattern="[A-Za-z]{3,20}"  required autofocus>
   <br><br>
   <input type="submit" value="Add Classification" id="submit"><br><br>`
