@@ -254,14 +254,20 @@ div.desc, div.desc1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.addclassification {
+.newClassification {
   background-color: rgb(19, 158, 223);
-  width: 900px;
+  width: 800px;
   margin-left: 140px;
   padding: 12px 8px;
-  font-size: 26px;
+  font-size: 20px;
   border: 2px solid #81e4f1;
-  margin-top: 140px;
+  margin-top: 70px;
+}
+#addclassification {
+  height: 30px;
+  width: 375px;
+  font-size: larger;
+  margin-top: 784px;
 }
 
 #form {
@@ -271,25 +277,53 @@ div.desc, div.desc1 {
   padding-left: 15px;
  
 }
-#addclassification {
-  height: 30px;
-  width: 375px;
-  font-size: larger;
+#form1 {
+  margin-top: 12px;
+  display: block;
+  font-size: 26px;
 }
+#form1 input {
+  height: 26px;
+  width: 250px;
+  font-size: 16px;
+}
+.newInventory{
+  background-color: rgb(19, 158, 223);
+  width: 500px;
+  margin-left: 140px;
+  padding: 12px 8px;
+  font-size: 26px;
+  border: 2px solid #81e4f1;
+  margin-top: 40px;
+  margin-left: 30%;
+}
+
+#form2 input input:valid {
+  height: 26px;
+  width: 250px;
+  font-size: 16px;
+  
+}
+#form2 label {
+  display: block;
+}
+#form2 #description {
+  width: 360px;
+}
+input:valid {
+  
+  background-color: palegreen;
+}
+
+input:invalid {
+  background-color: lightpink;
+}
+
 #submit {
   height: 40px;
   font-weight:bolder;
   font-size: 16px;
-}
-
-#form2 input {
-  height: 26px;
-  width: 250px;
-  font-size: 16px;
-
-}
-#form2 #description {
-  width: 360px;
+  background-color: #82ceec;
 }
 footer {
   padding-top: 50px;

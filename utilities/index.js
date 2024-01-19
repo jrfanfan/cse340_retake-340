@@ -109,17 +109,18 @@ Util.buildAddClassificationGrid4 = async function() {
   grid4 = `<h1>`
   grid4 += `Add New Classification`
   grid4 += `</h1>`
-  grid4 += `<div class="addclassification">`
+  grid4 += `<div class="newClassification">`
   grid4 += `<h3>Field is required</h3>`
   grid4 += `<div id="form">`
   grid4 += `<h3>Classification Name</h3>`
-  grid4 += `<form action="/" id="form1">`
-  grid4 += `<label for="addclassification">NAME MUST BE ALPHABETIC CHARACTERS ONLY.</label> <br>`
-  grid4 += `<input type="text" id="addclassification" name="addclassification" required autofocus> <br> <br>`
-  grid4 += `<input type="submit" value="Add Classification" id="submit"> <br><br>`
+  grid4 += `<form action="" id="form1">
+  <label for="addclassification">NAME MUST BE ALPHABETIC CHARACTERS ONLY.</label>
+  <input type="text" id="newClassification" name="newClassification" pattern="[A-Za-z]{3,20}"  required autofocus>
+  <br><br>
+  <input type="submit" value="Add Classification" id="submit"><br><br>`
   grid4 += `</form>`
   grid4 += `</div>`
-  grid4 += `</div>`
+  grid4 += `</div>` 
   return grid4
 
 }
@@ -131,12 +132,12 @@ Util.builAddInvetorydGrid5 =  async function() {
   grid5 = `<h1>`
   grid5 += `Add New Inventory`
   grid5 += `</h1>`
-  grid5 += `<div class="addclassification">`
+  grid5 += `<div class="newInventory">`
   grid5 += `<h3>ALL FIELDS ARE REQUIRED</h3>`
   grid5 += `<div id="form">`
   grid5 += `<form action="" id="form2">`
-  grid5 += `<label for="addclassification">Classification</label> <br>`
-  grid5 += `<select id="classification" name="classification">`
+  grid5 += `<label for="chooseClassification">Classification</label>`
+  grid5 += `<select id="chooseClassification" name="classification" required>`
   grid5 +=` <option value="">--Choose a Classification--</option>`
   grid5 += `<ul>`
   data.rows.forEach((row) => {
@@ -148,17 +149,18 @@ Util.builAddInvetorydGrid5 =  async function() {
   })
   grid5 += `</ul>`
   grid5 += `</select> <br>`
-  grid5 += `<label for="invMake">Make</label><br> 
-  <input name="inv_make" id="invMake" type="text"  minlength="3" placeholder="Min of 3 characters"><br>
-  <label for="invModel">Model</label><br>
-  <input name="inv_model" id="invModel" type="text"  minlength="3" placeholder="Min of 3 characters"><br>
-  <label for="invDescription">Description</label><br>  <textarea name=" inv_description" id="description" rows="4" cols="25"></textarea><br> 
-  <label for="invImage">Image Path</label><br> <input name="inv_image" id="invImage" type="text" placeholder="/images/vehicles/no-image.png"><br>
-  <label for="invImageThumbnail">Thumbnail Path</label><br> <input name="inv_thumbnail" id="invThumnail" type="text" placeholder="/images/vehicles/no-image.png"><br>
-  <label for="invPrice">Price</label><br><input name="inv_price" id="invPrice" type="text"  placeholder="Decimal or integer"><br>
-  <label for="invYear">Year</label><br><input name="inv_year" id="invYear" type="text" minlength="4"  maxlength="4" placeholder="4-digit Year"><br>`
-  grid5 += `<input type="submit" value="Add Classification" id="submit"> <br><br>`
-  grid5 += `</form2>`
+  grid5 += `<label for="invMake">Make</label>
+  <input name="inv_make" id="invMake" type="text"  minlength="3" placeholder="Min of 3 characters" required><br>
+  <label for="invModel">Model</label>
+  <input name="inv_model" id="invModel" type="text"  minlength="3" placeholder="Min of 3 characters" required>
+  <label for="invDescription">Description</label> <textarea name=" inv_description" id="description" rows="4" cols="25" required></textarea>
+  <label for="invImage">Image Path</label> <input name="inv_image" id="invImage" type="text" placeholder="/images/vehicles/no-image.png">
+  <label for="invImageThumbnail">Thumbnail Path</label> <input name="inv_thumbnail" id="invThumnail" type="text" placeholder="/images/vehicles/no-image.png">
+  <label for="invPrice">Price</label><input name="inv_price" id="invPrice" type="text"  placeholder="Decimal or integer" required>
+  <label for="invYear">Year</label><input name="inv_year" id="invYear" type="text" minlength="4"  maxlength="4" placeholder="4-digit Year" required>
+  <label for="invColor">Color</label><input name="inv_color" id="invColor" type="text" minlength="4" required><br>
+  <input type="submit" value="Add Inventory" id="submit"><br><br>`
+  grid5 += `</form>`
   grid5 += `</div>`
   grid5 += `</div>`
   return grid5
