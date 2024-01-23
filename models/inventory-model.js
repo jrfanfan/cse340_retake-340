@@ -43,5 +43,16 @@ async function getInventoryByClassificationDetail(classification_id) {
 }
 
 
+/* ***************************
+ *  Add new classification_name 
+ * ************************** */
 
-module.exports = {getClassifications, getInventoryByClassificationId, getInventoryByClassificationDetail};
+async function newClassification() {
+  let addNew = document.getElementById('newClassification').value ;
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  return await pool.query(`INSERT INTO public.classification (classification_name)
+  VALUES ('newCar')`);
+}
+
+
+module.exports = {getClassifications, getInventoryByClassificationId, getInventoryByClassificationDetail, newClassification};

@@ -109,15 +109,16 @@ Util.buildAddClassificationGrid4 = async function() {
   grid4 = `<h1>`
   grid4 += `Add New Classification`
   grid4 += `</h1>`
+  grid4 += `<p id="demo"></p>`
   grid4 += `<div class="newClassification">`
   grid4 += `<h3>Field is required</h3>`
   grid4 += `<div id="form">`
   grid4 += `<h3>Classification Name</h3>`
-  grid4 += `<form action="" id="form1">
+  grid4 += `<form action="/inv/addNewClassification/" id="form1" method="get">
   <label for="newClassification">NAME MUST BE ALPHABETIC CHARACTERS ONLY.</label>
   <input type="text" id="newClassification" name="newClassification" pattern="[A-Za-z]{3,20}"  required autofocus>
   <br><br>
-  <input type="submit" value="Add Classification" id="submit"><br><br>`
+  <button type="button" onclick="newClassification()">Add Classification</button>`
   grid4 += `</form>`
   grid4 += `</div>`
   grid4 += `</div>` 
