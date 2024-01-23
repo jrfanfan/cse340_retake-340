@@ -15,7 +15,7 @@ const app = express()
 const static = require("./routes/static")
 const baseController = require("./controllers/baseController")
 const inventoryRoute = require("./routes/inventoryRoute")
-
+const accountRoute = require("./routes/accountRoute")
 /* ***********************
  * View Engine and Templates
  *************************/
@@ -54,6 +54,8 @@ app.use(static)
 app.get("/", baseController.buildHome)
 // Inventory routes
 app.use("/inv", inventoryRoute)
+// Account route
+app.use("/account", accountRoute )
 
 
 /* ***********************
