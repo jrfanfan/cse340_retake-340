@@ -1,4 +1,5 @@
 const pool = require("../database/")
+const utilities =  require("../utilities/")
 
 /* ***************************
  *  Get all classification data
@@ -48,10 +49,10 @@ async function getInventoryByClassificationDetail(classification_id) {
  * ************************** */
 
 async function newClassification() {
-  let addNew = document.getElementById('newClassification').value ;
-  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  let addNew = document.forms["form1"]["classification_name"].value;
+  
   return await pool.query(`INSERT INTO public.classification (classification_name)
-  VALUES ('newCar')`);
+  VALUES ("$")`)
 }
 
 
