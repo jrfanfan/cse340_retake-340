@@ -1,6 +1,7 @@
 const pool = require("../database/")
 const utilities =  require("../utilities/")
 
+
 /* ***************************
  *  Get all classification data
  * ************************** */
@@ -47,13 +48,12 @@ async function getInventoryByClassificationDetail(classification_id) {
 /* ***************************
  *  Add new classification_name 
  * ************************** */
-
-async function newClassification() {
-  let addNew = document.forms["form1"]["classification_name"].value;
   
-  return await pool.query(`INSERT INTO public.classification (classification_name)
-  VALUES ("$")`)
+async function getNewClassification(classification_name) {
+  return console.log(classification_name)
 }
 
 
-module.exports = {getClassifications, getInventoryByClassificationId, getInventoryByClassificationDetail, newClassification};
+
+
+module.exports = {getClassifications, getInventoryByClassificationId, getInventoryByClassificationDetail, getNewClassification};

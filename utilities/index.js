@@ -105,7 +105,9 @@ Util.buildManagementGrid3 = async function() {
   return grid3
 }
 
+
 Util.buildAddClassificationGrid4 = async function() {
+  
   let grid4
   grid4 = `<h1>`
   grid4 += `Add New Classification`
@@ -114,18 +116,19 @@ Util.buildAddClassificationGrid4 = async function() {
   grid4 += `<h3>Field is required</h3>`
   grid4 += `<div id="form">`
   grid4 += `<h3>Classification Name</h3>`
-  grid4 += `<form action="/inv/addNewClassification/" id="form1" onsubmit="return newClassification()" method="get">
+  grid4 += `<form action="/inv/addNewClassification/" id="form1" method="get">
   <label for="newClassification">NAME MUST BE ALPHABETIC CHARACTERS ONLY.</label>
   <input type="text" id="newClassification" name="classification_name" pattern="[A-Za-z]{3,20}"  required autofocus>
   <br><br>
-  <input type="submit" value="New Classification" id="submit">`
+  <p id="demo">There</p>
+  <input type="submit" value="New Classification" id="submit"  onclick="cd()">`
   grid4 += `</form>`
   grid4 += `</div>`
-  grid4 += `</div>` 
-  
+  grid4 += `</div>`
   return grid4
+  }
 
-}
+
 
 
 Util.builAddInvetorydGrid5 =  async function() {
