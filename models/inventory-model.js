@@ -48,12 +48,11 @@ async function getInventoryByClassificationDetail(classification_id) {
 /* ***************************
  *  Add new classification_name 
  * ************************** */
-  
-async function getNewClassification(classification_name) {
-  return console.log(classification_name)
-}
+ async function addNewClassification(x) {
+  return await pool.query(`INSERT INTO public.classification (classification_name) VALUES ("${x}")`);
+ }
 
 
 
 
-module.exports = {getClassifications, getInventoryByClassificationId, getInventoryByClassificationDetail, getNewClassification};
+module.exports = {getClassifications, getInventoryByClassificationId, getInventoryByClassificationDetail, addNewClassification};

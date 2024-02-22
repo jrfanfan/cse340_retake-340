@@ -103,11 +103,17 @@ Util.buildManagementGrid3 = async function() {
   grid3 += `</div>`
      
   return grid3
+
+
+
 }
 
 
+
+
+
+
 Util.buildAddClassificationGrid4 = async function() {
-  
   let grid4
   grid4 = `<h1>`
   grid4 += `Add New Classification`
@@ -121,19 +127,28 @@ Util.buildAddClassificationGrid4 = async function() {
   <input type="text" id="newClassification" name="classification_name" pattern="[A-Za-z]{3,20}"  required autofocus>
   <br><br>
   <p id="demo">There</p>
-  <input type="submit" value="New Classification" id="submit"  onclick="cd()">`
+  <input type="submit" value="New Classification" id="submit" onclick="loadDoc()" >`
   grid4 += `</form>`
+  grid4 += `</div>`     
   grid4 += `</div>`
-  grid4 += `</div>`
+  grid4 += `<script>` +
+  async function loadDoc() {
+    let a = document.querySelector('#newClassification').value;
+    invModel.addNewClassification(toString("je suis"));
+    
+  }
+  
+  grid4 += `</script>`
   return grid4
+  
   }
 
-
+ 
+  
 
 
 Util.builAddInvetorydGrid5 =  async function() {
   let data = await invModel.getClassifications()
- 
   let grid5
   grid5 = `<h1>`
   grid5 += `Add New Inventory`
